@@ -1,0 +1,55 @@
+.ResumeDownloadButton {
+    position: absolute;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 15px;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    top:10px;
+    right: 10px;
+    font-family: "Open Sans";
+  }
+  
+  .ResumeDownloadButton:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .ResumeDownloadButton-content {
+    position: relative;
+    z-index: 1;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 900;
+  }
+  
+  .ResumeDownloadButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: 15px;
+    background: linear-gradient(
+      82.3deg,
+      rgb(14.12% 45.88% 69.02%),
+      rgb(14.12% 45.88% 69.02%)
+    );
+    transition: all 0.475s;
+  }
+  .downloadIcon{
+    color: #fff !important;
+    position: relative;
+    z-index: 2;
+    margin-right: 5px;
+  }
+  

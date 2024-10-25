@@ -1,0 +1,35 @@
+.emailInput {
+  width: 340px;
+  height: 44px;
+  background-color: #05060f0a;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 14px;
+  font-family: "Open Sans";
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: black;
+  transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.emailInput:hover,
+.emailInput:focus,
+.userEmailInput:hover .input {
+  outline: none;
+  border-color: #05060f;
+}
+
+.userEmailInput:hover .label,
+.emailInput:focus {
+  color: black;
+}

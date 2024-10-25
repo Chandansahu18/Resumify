@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.Container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #cdebff 0%, #7bcaff 100%);
+}
+.homePageContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+}
+.websiteLogo {
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.websiteName {
+  font-family: "Open Sans";
+  font-size: 30px;
+  color: #37aeff;
+}
+.homePageContent {
+  height: 700px;
+  width: 1250px;
+  display: flex;
+}
+.homePageText_buildResumeButton_Container {
+  height: 100%;
+  width: 60%;
+  font-family: "Open Sans";
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.lineOne {
+  width: 100%;
+  height: 26%;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+}
+.lineTwo {
+  width: 100%;
+  height: 10%;
+  font-size: 50px;
+  font-weight: 700;
+}
+.lineThree {
+  width: 100%;
+  height: 15%;
+  font-size: 50px;
+  font-weight: 700;
+}
+.spanResumeText {
+  background-color: #2475b0;
+  color: white;
+  margin-left: 10px;
+  width: 30%;
+  display: flex;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.spanGitHubText {
+  background-color: black;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 8px;
+}
+.homePageSampleResume {
+  height: 100%;
+  width: 40%;
+}
+.sampleResume {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  cursor: pointer;
+}
+.userContactDetailsInputContainer {
+  background-color: #eaf0f1;
+  height: 450px;
+  width: 400px;
+  border-radius: 14px;
+  display: none;
+  flex-direction: column;
+  padding: 0px 10px 0px 10px;
+}
+.contactDetailsHeadingContainer {
+  height: 60px;
+  width: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.contactDetailsHeading {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+.email_phone_Container {
+  height: 250px;
+  width: 390px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 10px;
+  flex-direction: column;
+}
+.continueToNextPageButtonContainer {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchUsernameContainer {
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-color: white;
+  height: 300px;
+  width: 350px;
+  border-radius: 14px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.searchUsernameHeadingContainer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.searchUsernameHeadingText {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 22px;
+}
+.searchUsernameField {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.loadingIndicator {
+  height: 100%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.resumeContainer {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  display: none;
+  /* none */
+  align-items: center;
+  justify-content: center;
+}
+.resume {
+  height: 900px;
+  width: 750px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nameContainer {
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.name {
+  font-size: 30px;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seperator {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.email {
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #0031f2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.phoneNo {
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+.twitterHandle {
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #0031f2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.githubHandle {
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: #0031f2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
+}
+.summaryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.summaryHeading {
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 700;
+  width: 705px;
+  border-bottom: 2px solid black;
+  margin-bottom: 6px;
+}
+.summaryParagraph {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  width: 705px;
+}
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.skillHeading {
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 700;
+  width: 705px;
+  border-bottom: 2px solid black;
+  margin-bottom: 6px;
+}
+.userSkills {
+  display: flex;
+  flex-direction: row;
+  width: 705px;
+  margin-right: 10px;
+  flex-wrap: wrap;
+}
+.skills {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.projectHeading {
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 700;
+  width: 705px;
+  border-bottom: 2px solid black;
+  margin-bottom: 6px;
+}
+.projectDetailsContainer {
+  width: 705px;
+}
+.projectOneContainer {
+  width: 705px;
+}
+.projectOneHeading {
+  margin-bottom: 6px;
+  width: 705px;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+.projectOneDescriptionContainer {
+  width: 705px;
+  margin-bottom: 10px;
+}
+.projectOneDescription {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.techStackUsedProjectOne {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.projectOneLiveLink {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+.liveLink {
+  text-decoration: underline;
+  color: #0031f2;
+}
+.projectTwoContainer {
+  width: 705px;
+}
+.projectTwoHeading {
+  margin-bottom: 6px;
+  width: 705px;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+.projectTwoDescriptionContainer {
+  width: 705px;
+  margin-bottom: 10px;
+}
+.projectTwoDescription {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.techStackUsedProjectTwo {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.projectTwoLiveLink {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+.projectThreeContainer {
+  width: 705px;
+}
+.projectThreeHeading {
+  margin-bottom: 6px;
+  width: 705px;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+.projectThreeDescriptionContainer {
+  width: 705px;
+}
+.projectThreeDescription {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.techStackUsedProjectThree {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.projectThreeLiveLink {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 600;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../Images/headIcon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS files/index.css" />
+    <link rel="stylesheet" href="../CSS files/userEmailInput.css" />
+    <link rel="stylesheet" href="../CSS files/userPhoneNoInput.css" />
+    <link rel="stylesheet" href="../CSS files/searchUsernameField.css" />
+    <link rel="stylesheet" href="../CSS files/generateButton.css" />
+    <link rel="stylesheet" href="../CSS files/loadingIndicator.css" />
+    <link rel="stylesheet" href="../CSS files/continueToNextPageButton.css" />
+    <link rel="stylesheet" href="../CSS files/ResumeDownloadButton.css" />
+    <link rel="stylesheet" href="../CSS files/buildResumeHomePageButton.css">
+    <title>Free resume maker | Resumify</title>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="navbar">
+        <img
+          src="../Images/logo.png"
+          alt="website-logo"
+          class="websiteLogo"
+        />
+        <h1 class="websiteName">Resumify</h1>
+      </div>
+      <div class="homePageContainer">
+        <div class="homePageContent">
+          <div class="homePageText_buildResumeButton_Container">
+            <h1 class="lineOne">
+              Build Your Perfect <span class="spanResumeText">Resume</span>
+            </h1>
+            <h1 class="lineTwo">
+              in seconds by simply using 
+            </h1>
+            <h1 class="lineThree">your <span class="spanGitHubText">GitHub</span> username</h1>
+            <button class="buildResumeHomePageButton">Build Your Resume</button>
+          </div>
+          <div class="homePageSampleResume">
+            <img
+              src="../Images/websiteSampleResumeImage.png"
+              alt="sampleResume"
+              class="sampleResume"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="userContactDetailsInputContainer">
+        <div class="contactDetailsHeadingContainer">
+          <h1 class="contactDetailsHeading">Contact Details</h1>
+        </div>
+        <div class="email_phone_Container">
+          <div class="userEmailInput">
+            <label class="label">Email address</label>
+            <input
+              autocomplete="off"
+              name="Email"
+              id="Email"
+              class="emailInput"
+              type="email"
+              placeholder="john@gmail.com"
+            />
+            <div></div>
+          </div>
+          <div class="userPhoneNoInput">
+            <label class="label">Phone No.</label>
+            <input
+              autocomplete="off"
+              name="PhoneNo."
+              id="PhoneNo."
+              class="phoneNoInput"
+              type="text"
+              placeholder=" (206) 709-3100"
+              maxlength="10"
+              pattern="\d{10}"
+            />
+            <div></div>
+          </div>
+        </div>
+        <div class="continueToNextPageButtonContainer">
+          <button class="continueToNextPageButton">Continue</button>
+        </div>
+      </div>
+      <div class="searchUsernameContainer">
+        <div class="searchUsernameHeadingContainer">
+          <h1 class="searchUsernameHeadingText">Username Search</h1>
+        </div>
+        <div class="searchUsernameField">
+          <div class="InputContainer">
+            <input
+              placeholder="Search username"
+              id="input"
+              class="input"
+              name="text"
+              type="text"
+            />
+
+            <label class="labelforsearch" for="input">
+              <svg class="searchIcon" viewBox="0 0 512 512">
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                ></path>
+              </svg>
+            </label>
+          </div>
+        </div>
+        <div class="generateButtonContainer">
+          <button class="generateButton">Generate</button>
+        </div>
+      </div>
+      <div class="loadingIndicator">
+        <div class="loaderBar"></div>
+      </div>
+      <div class="resumeContainer">
+        <div class="resume">
+          <div class="nameContainer"></div>
+          <div class="contactContainer"></div>
+          <div class="summaryContainer">
+            <h1 class="summaryHeading">Summary</h1>
+            <p class="summaryParagraph">
+              Dedicated and innovative software developer with a passion for
+              creating efficient, scalable solutions. Proficient in various
+              development tools, languages, and frameworks, etc. with a track
+              record of delivering high-quality code. Committed to continuous
+              learning and staying updated with emerging technologies in the
+              rapidly evolving tech landscape.
+            </p>
+          </div>
+
+          <div class="skillsContainer">
+            <h1 class="skillHeading">Skills</h1>
+            <div class="userSkills"></div>
+          </div>
+
+          <div class="projectsContainer">
+            <h1 class="projectHeading">Projects</h1>
+            <div class="projectDetailsContainer">
+              <div class="projectOneContainer"></div>
+              <div class="projectTwoContainer"></div>
+              <div class="projectThreeContainer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ResumeDownloadButtonContainer">
+      <button class="ResumeDownloadButton">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-arrow-down-to-line downloadIcon"
+        >
+          <path d="M12 17V3" />
+          <path d="m6 11 6 6 6-6" />
+          <path d="M19 21H5" />
+        </svg>
+        <span class="ResumeDownloadButton-content">Download </span>
+      </button>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="../JS files/getEmailAndPhoneNumberFromUser.js"
+    defer
+  ></script>
+  <script type="module" src="../JS files/index.js" defer></script>
+  <script type="module" src="../JS files/getDataFromGithub.js" defer></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+</html>
