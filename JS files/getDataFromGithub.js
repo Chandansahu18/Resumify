@@ -59,11 +59,9 @@ export const fetchUserData = async (username) => {
       let allLanguages = new Set();
       let userSkillsArray = [];
 
-      console.log(userReposForSkills);
-
       if (userReposForSkills.length === 0) {
         alert("You don't have any data to show");
-        window.location.reload();
+        // window.location.reload();
         return;
       } else {
         //Traversing through user's each repo to get required languages used to built respective projects
@@ -136,10 +134,10 @@ export const fetchUserData = async (username) => {
   } catch (error) {
     if (error.status === 404) {
       alert("User not found");
-      window.open("index.html", "_self");
+      window.location.reload();
     } else {
       alert("Something went wrong");
-      window.open("index.html", "_self");
+      window.location.reload();
     }
   }
 };

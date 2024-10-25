@@ -58,21 +58,21 @@ window.addEventListener("DOMContentLoaded", () => {
       } else {
         searchUsernameContainer.style.display = "none";
         loadingIndicator.style.display = "flex";
-
-        setTimeout(() => {
-          loadingIndicator.style.display = "none";
-        }, 6000);
-
-        setTimeout(() => {
-          generatedResume.style.display = "flex";
-          downloadResumeButton.style.display = "flex";
-        }, 6000);
-
         try {
           fetchUserData(userNameText);
+          setTimeout(() => {
+            generatedResume.style.display = "flex";
+            downloadResumeButton.style.display = "flex";
+          }, 6000);
+
+          setTimeout(() => {
+            loadingIndicator.style.display = "none";
+          }, 6000);
+
         } catch (error) {
           console.error(error);
         }
+
       }
     });
   }
@@ -91,7 +91,6 @@ window.addEventListener("DOMContentLoaded", () => {
       } catch (error) {
         console.error(error);
         alert("Failed to retrieve user email. Please try again.");
-        window.open("index.html","_self");
       }
     });
   }

@@ -32,7 +32,6 @@ getEmailAndPhoneNoButton.addEventListener("click", () => {
     }
   } catch (error) {
     alert("Something went wrong");
-    window.open("index.html","_self");
   }
 
 });
